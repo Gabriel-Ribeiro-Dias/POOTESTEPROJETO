@@ -14,11 +14,11 @@ public class Terreno implements Posicionavel, Propriedade {
 	private int precoCasa;
 	private int numCasas;
 	private int aluguel;
-	private Jogador dono;
+	private Jogador dono = null;
 
 	public Terreno(String nome, int posicao, int precoCompra, int aluguelSemCasa, int aluguelUmaCasa,
 			int aluguelDuasCasas, int aluguelTresCasas, int aluguelQuatroCasas, int aluguelHotel, int hipoteca,
-			int precoCasa, int numCasas, int aluguel, Jogador dono) {
+			int precoCasa, int numCasas, int aluguel) {
 		this.nome = nome;
 		this.posicao = posicao;
 		this.precoCompra = precoCompra;
@@ -32,7 +32,6 @@ public class Terreno implements Posicionavel, Propriedade {
 		this.precoCasa = precoCasa;
 		this.numCasas = numCasas;
 		this.aluguel = aluguel;
-		this.dono = dono;
 	}
 
 	public String getNome() {
@@ -153,7 +152,7 @@ public class Terreno implements Posicionavel, Propriedade {
 				+ aluguelSemCasa + ", aluguel Uma Casa=" + aluguelUmaCasa + ", aluguel Duas Casas=" + aluguelDuasCasas
 				+ ", aluguelTresCasas=" + aluguelTresCasas + ", aluguelQuatroCasas=" + aluguelQuatroCasas
 				+ ", aluguel Hotel=" + aluguelHotel + ", hipoteca=" + hipoteca + ", preco da Casa=" + precoCasa
-				+ ", numeros de casas=" + numCasas + ", preço do aluguel : " + aluguel + ", dono : " + dono ;
+				+ ", numeros de casas=" + numCasas + ", preço do aluguel : " + aluguel ;
 	}
 
 

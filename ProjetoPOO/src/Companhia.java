@@ -6,15 +6,15 @@ public class Companhia implements Posicionavel, Propriedade {
 	private int precoCompra;
 	private int Hipoteca;
 	private int Multiplicador;
-	private Jogador dono;
+	private Jogador dono = null;
 
-	public Companhia(String nome, int posicao, int precoCompra, int hipoteca, int multiplicador , Jogador dono) {
+	public Companhia(String nome, int posicao, int precoCompra, int hipoteca, int multiplicador ) {
 		this.nome = nome;
 		this.posicao = posicao;
 		this.precoCompra = precoCompra;
 		Hipoteca = hipoteca;
 		Multiplicador = multiplicador;
-		this.dono = dono;
+
 	}
 
 	
